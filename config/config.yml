@@ -1,0 +1,53 @@
+mailchimp_config:
+    api_key: b0e4ac53eeeab9fea2c7bae91b8ef7cf-us4
+    list_id: f046372aaa
+    #enable the saving in mailchimp part
+    enable: false
+
+mails_copy:
+    from: 
+        email: noreply@numerique.re
+        name: La Matrix
+    to: 
+        - nicolas.ludovic@gmail.com
+        - nludovic@tbwa-lamatrix.com
+    subject: Landing Page Résidence Le Koeur
+    cci: ~ 
+
+database_config:
+    host: localhost
+    port: 3306
+    dababase_name: facebook
+    user: root
+    password: dfg11ert!
+    #enable the saving in database part
+    enable: false 
+
+#Validation constraints on form's fields
+constraints:
+    email:
+        - Email
+    nom:
+        - NotBlank
+    prenom:
+        - NotBlank
+    message:
+        - NotBlank
+
+#The matching between the form's field and the mailchimp fields
+#MAILCHIMP_FIELD: FORM_FIELD
+mailchimp_matching:
+    EMAIL: email 
+    FNAME: firstname
+    LNAME: lastname
+
+#the matching between the form's fields and the database fields
+database_matching:
+    #the database table
+    table: spag_contact 
+    #the matching fields
+    #DATABASE_FIELD: FORM_FIELD
+    fields:
+        email: email
+        prenom: firstname
+        nom: lastname

@@ -1,0 +1,16 @@
+{
+    "require": {
+        "mailchimp/mailchimp": "dev-master",
+        "symfony/yaml": "2.5.*@dev",
+        "symfony/validator": "2.4.*@dev",
+        "swiftmailer/swiftmailer": "5.2.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ifendirh\\Validator\\": "src/Ifendirh/Validator",
+            "Ifendirh\\Subscriber\\": "src/Ifendirh/Subscriber",
+            "Ifendirh\\Database\\": "src/Ifendirh/Database",
+            "Ifendirh\\Views\\": "src/Ifendirh/Views"
+            }
+    }
+}
