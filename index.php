@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Résidence Le Koeur</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/ekko-lightbox.css">
+        <!-- <link rel="stylesheet" href="css/ekko-lightbox.css"> -->
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -22,7 +22,7 @@
     <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-main" data-slide-to="1"></li>
     <li data-target="#carousel-main" data-slide-to="2"></li>
-    <li data-target="#carousel-main" data-slide-to="3"></li>
+    <!-- <li data-target="#carousel-main" data-slide-to="3"></li> -->
   </ol>
 
   <!-- Wrapper for slides -->
@@ -42,12 +42,12 @@
       <div class="carousel-caption">
       </div>
     </div>
-    <div class="item">
+ <!--    <div class="item">
         
       <a href="https://www.youtube.com/watch?v=jx3G0CoZjAc" class="youtube-lightbox"><img src="img/slide_2.jpg" alt=""></a>
       <div class="carousel-caption">
       </div>
-    </div> 
+    </div>  -->
   </div>
 
   <!-- Controls -->
@@ -64,16 +64,18 @@
         
       <div class="col-md-12 accroche">
        
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quas perspiciatis iure repellat enim tenetur laboriosam ipsa blanditiis mollitia. Cumque quae, nam odit labore fugiat! Nostrum quisquam, doloribus similique cupiditate.
+         La résidence « Le Koeur » présente une architecture moderne tout en s’intégrant parfaitement à son environnement riche en histoire et en culture.
      
        
       </div>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempore error voluptas cumque reiciendis, natus inventore aperiam? Ipsa quas fuga, possimus eveniet atque optio vero doloremque? Quae ullam perspiciatis harum!
-          </p>
+          <p>Se trouvant en plein centre de Saint-Denis,  la résidence est un domaine à la fois privé et sécurisé et à proximité de tous commerces et services.</p>
+
+<p>Constituée d’un unique bâtiment, cette résidence chaleureuse comporte 18 appartements allant du T1 au T3. Lumineux, fonctionnel et doté d’un charme exceptionnel, chacun des logements est conçu pour vous apporter un confort idéal.</p>
+
+<p>La résidence LE KOEUR vous donne une rare opportunité de devenir propriétaire ou d’investir dans un logement neuf au centre  ville de Saint Denis.</p>
           <table class="table table-bordered">
              <tr>
                <th>T3</th>
@@ -98,7 +100,7 @@
         </div>
         <div class="col-md-6">
           <form action="save_subscribe.php" method="POST" role="form" class="contact">
-            <p>Si vous êtes intéressé. Veuillez remplir ce formulaire</p>
+            <p>Vous êtes intéressé(e) ? Veuillez remplir ce formulaire</p>
             <div class="form-group">
               <label for="nom">Nom* :</label>
               <input type="text" class="form-control" name="nom" id="nom" required placeholder="">
@@ -144,39 +146,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="js/ekko-lightbox.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script>
-        function initialize() {
-            var mapCanvas = document.getElementById('map_canvas');
-            var posResidence = new google.maps.LatLng(-20.8737076,55.452196);
-            var infos = "Adresse de la Résidence";
-            var mapOptions = {
-                  center: posResidence,
-                  zoom: 17,
-                  mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-            var iconBase = 'img/icone_spag.png';
-            var infoWindow = new google.maps.InfoWindow({
-                content: infos
-            });
-            var marker = new google.maps.Marker({
-              position: posResidence,
-              map: map,
-              icon: iconBase
-            });
-
-            google.maps.event.addListener(marker, 'click', function() {
-              infoWindow.open(map,marker);
-            });
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-        $(document).ready(function() {
-          $(document).delegate('.youtube-lightbox', 'click', function(event) {
-              event.preventDefault();
-              $(this).ekkoLightbox();
-          }); 
-        });
-        </script>
-
+        <script src="js/main.js"></script>
     </body>
 </html>
