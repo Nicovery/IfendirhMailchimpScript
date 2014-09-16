@@ -23,6 +23,17 @@ database_config:
     #enable the saving in database part
     enable: true 
 
+#Envoie le formulaire par email 
+mails_copy:
+    from: 
+        email: noreply@numerique.re
+        name: La Matrix
+    to: 
+        - nicolas.ludovic@gmail.com
+        - nludovic@tbwa-lamatrix
+    subject: Landing Page Résidence Le Koeur
+    cci: ~ 
+
 #Validation constraints on form's fields
 constraints:
     email:
