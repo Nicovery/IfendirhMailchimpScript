@@ -91,10 +91,7 @@ try {
                 ->setBody(BodyMail::create($_POST));
           
             $result = $mailer->send($message);
-            if($result == false){
-                die('error  : '.print_r($result));
-                
-            }
+          
         }
     }
 }

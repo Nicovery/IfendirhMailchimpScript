@@ -24,7 +24,6 @@ function initialize() {
         }
         google.maps.event.addDomListener(window, 'load', initialize);
 $(document).ready(function() {
-	//control carousel with previous/next button
        $(document).bind('keyup', function(e) {
               if(e.which == 39){
                   $('#carousel-main').carousel('next');

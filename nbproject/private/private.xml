@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/mailchimp_save/vendor/composer/autoload_namespaces.php</file>
+            <file>file:/var/www/mailchimp_save/vendor/symfony/validator/Symfony/Component/Validator/ConstraintViolationList.php</file>
+            <file>file:/var/www/mailchimp_save/src/Ifendirh/Validator/FormValidator.php</file>
+            <file>file:/var/www/mailchimp_save/composer.json</file>
+            <file>file:/var/www/mailchimp_save/config/mailchimp_config.yml</file>
+            <file>file:/var/www/mailchimp_save/src/Ifendirh/Subscriber/GlobalSubscriber.php</file>
+            <file>file:/var/www/mailchimp_save/vendor/autoload.php</file>
+            <file>file:/var/www/mailchimp_save/tests/Ifendirh/Validator/FormValidatorTest.php</file>
+            <file>file:/var/www/mailchimp_save/src/Ifendirh/Validator/FieldConstraint.php</file>
+            <file>file:/var/www/mailchimp_save/save_subscribe.php</file>
+            <file>file:/var/www/mailchimp_save/index.php</file>
+            <file>file:/var/www/mailchimp_save/src/Ifendirh/Database/DatabaseConnector.php</file>
+            <file>file:/var/www/mailchimp_save/vendor/mailchimp/mailchimp/src/Mailchimp/Lists.php</file>
+            <file>file:/var/www/mailchimp_save/config/config.yml</file>
+            <file>file:/var/www/mailchimp_save/.gitignore</file>
+            <file>file:/var/www/mailchimp_save/vendor/mailchimp/mailchimp/src/Mailchimp.php</file>
+        </group>
+    </open-files>
+</project-private>

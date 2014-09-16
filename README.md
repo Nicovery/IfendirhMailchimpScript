@@ -21,18 +21,7 @@ database_config:
     user: root
     password: 
     #enable the saving in database part
-    enable: true
-     
-#Send copy mails
-mails_copy:
-    from: 
-        email: noreply@numerique.re
-        name: La Matrix
-    to: 
-        - nicolas.ludovic@gmail.com
-        - nludovic@tbwa-lamatrix.com
-    subject: Landing Page Résidence Le Koeur
-    cci: ~ 
+    enable: true 
 
 #Validation constraints on form's fields
 constraints:
