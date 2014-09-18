@@ -131,6 +131,12 @@
               <textarea name="message" id="message" class="form-control" rows="4" required ></textarea>
             </div>
             <p class="notice">*champs obligatoires</p>
+            <div class="secure-box">
+                
+                  <img id="captcha" src="lib/securimage/securimage_show.php" alt="CAPTCHA Image" /><br />
+                  <input class="form-control" required type="text" name="captcha_code" size="10" maxlength="6" /><a href="#" onclick="document.getElementById('captcha').src = 'lib/securimage/securimage_show.php?' + Math.random(); return false">[ Autre image ]</a>
+                
+            </div>  
 
             <button type="submit" class="btn btn-large submit">Valider</button>
           </form>

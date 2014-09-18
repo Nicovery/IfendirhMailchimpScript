@@ -224,12 +224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Validator.git",
-                "reference": "c10d81c85690cd14645c9379cd10c925b75cd437"
+                "reference": "8cc0db678152f08b9cf735ab2aa68780f1b3a77b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Validator/zipball/c10d81c85690cd14645c9379cd10c925b75cd437",
-                "reference": "c10d81c85690cd14645c9379cd10c925b75cd437",
+                "url": "https://api.github.com/repos/symfony/Validator/zipball/8cc0db678152f08b9cf735ab2aa68780f1b3a77b",
+                "reference": "8cc0db678152f08b9cf735ab2aa68780f1b3a77b",
                 "shasum": ""
             },
             "require": {
@@ -280,7 +280,7 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-31 03:18:18"
+            "time": "2014-09-15 17:37:41"
         },
         {
             "name": "symfony/yaml",
@@ -289,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "01a7695bcfb013d0a15c6757e15aae120342986f"
+                "reference": "b34598ccd52382b7a3a04f8ddd1c104382d4e1e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/01a7695bcfb013d0a15c6757e15aae120342986f",
-                "reference": "01a7695bcfb013d0a15c6757e15aae120342986f",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b34598ccd52382b7a3a04f8ddd1c104382d4e1e2",
+                "reference": "b34598ccd52382b7a3a04f8ddd1c104382d4e1e2",
                 "shasum": ""
             },
             "require": {
@@ -327,7 +327,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-08-31 03:22:04"
+            "time": "2014-09-17 09:50:16"
         }
     ],
     "packages-dev": [

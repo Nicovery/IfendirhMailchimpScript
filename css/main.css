@@ -117,6 +117,23 @@ footer{
 .main-content{
 	padding-bottom : 50px;
 }
+.secure-box{
+	width: 66.66666667%;
+	position: relative;
+	margin: 10px auto 0;
+}
+.secure-box img{
+	border: 1px solid #6C281F;
+	border-bottom: none;
+	width:100%;
+}
+.secure-box a{
+	color: #FFF;
+	font-size:11px;
+	text-align:right;
+	width:100%;
+	display:inline-block;
+}
 /***************** modal ******************/
 .modal-header{
 	color: #000;
