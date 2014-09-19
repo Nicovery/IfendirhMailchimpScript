@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Résidence Le Koeur</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <!-- <link rel="stylesheet" href="css/ekko-lightbox.css"> -->
         <link rel="stylesheet" href="css/main.css">
@@ -103,7 +104,7 @@
             <p>Vous êtes intéressé(e) ? Veuillez remplir ce formulaire</p>
             <div class="form-group">
               <label for="nom">Nom* :</label>
-              <input type="text" class="form-control" name="nom" id="nom" required placeholder="">
+              <input type="text" title="Your name is required." class="form-control" name="nom" id="nom" required placeholder="">
             </div>
             <div class="form-group">
               <label for="prenom">Prénom* :</label>
@@ -134,11 +135,12 @@
             <div class="secure-box">
                 
                   <img id="captcha" src="lib/securimage/securimage_show.php" alt="CAPTCHA Image" /><br />
-                  <input class="form-control" required type="text" name="captcha_code" size="10" maxlength="6" /><a href="#" onclick="document.getElementById('captcha').src = 'lib/securimage/securimage_show.php?' + Math.random(); return false">[ Autre image ]</a>
+                  <input class="form-control" required type="text" name="captcha_code" placeholder="Recopier le code ici" size="10" maxlength="6" /><a href="#" onclick="document.getElementById('captcha').src = 'lib/securimage/securimage_show.php?' + Math.random(); return false">[ Autre image ]</a>
                 
             </div>  
 
-            <button type="submit" class="btn btn-large submit">Valider</button>
+            <!-- <button type="submit" class="btn btn-large submit">Valider</button> -->
+            <input type="submit" class="btn btn-large submit" value="Valider" />
           </form>
           
         </div>
@@ -150,6 +152,7 @@
        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/h5Validate/0.8.4/jquery.h5validate.min.js"></script>
         <script src="js/ekko-lightbox.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="js/main.js"></script>

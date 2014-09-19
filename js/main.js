@@ -32,4 +32,8 @@ $(document).ready(function() {
                   $('#carousel-main').carousel('prev');
               }
           });
+
+       $('.contact').h5Validate({
+      errorClass:'error-form'
+    });
         });
