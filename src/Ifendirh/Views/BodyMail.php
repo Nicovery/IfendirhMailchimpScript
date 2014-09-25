@@ -10,7 +10,10 @@ class BodyMail
 	{
 		$body = '';
 		foreach ($fields as $fieldName => $fieldValue) {
-			$body .= $fieldName.' : '.$fieldValue.'<br />';
+			if(!in_array($fieldName, $exclude) ){
+				$body .= $fieldName.' : '.$fieldValue.'<br />';
+			}
+			
 		}
 		return $body;
 	}
