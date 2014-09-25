@@ -49,7 +49,7 @@ if ($securimage->check($_POST['captcha_code']) != false) {
         if ($validator->isAllValid()) {
             
             //get the mailchimp matching
-            if (isset($config['mailchimp_matching'])) {
+            if (isset($config['mailchimp_matching'])  && isset($_POST['newsletter']) && $_POST['newsletter'] ="1") {
                 $mailchimpConfig = $config['mailchimp_config'];
                 if ($mailchimpConfig['enable']) {
                     if (isset($mailchimpConfig['api_key']) && isset($mailchimpConfig['list_id'])) {
@@ -106,7 +106,7 @@ if ($securimage->check($_POST['captcha_code']) != false) {
         printf("Unable to parse the YAML string: %s", $e->getMessage());
     }
     
-    header('location:confirm.php?state=' . $state);
+    header('location:confirm.php');
 }else{
     header('location:index.php');
 
