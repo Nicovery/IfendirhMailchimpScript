@@ -102,6 +102,11 @@
         <div class="col-md-6">
           <form action="save_subscribe.php" method="POST" role="form" class="contact">
             <p>Vous êtes intéressé(e) ? Veuillez remplir ce formulaire</p>
+            <?php if(isset($_GET['error'])): ?>
+    <div class="alert alert-danger alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  Mauvais code de sécurité.
+</div>
             <div class="form-group">
               <label for="nom">Nom* :</label>
               <input type="text" title="Your name is required." class="form-control" name="nom" id="nom" required placeholder="">
