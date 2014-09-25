@@ -152,7 +152,7 @@
       </div>
     </div>
     <footer>
-      copyright &copy; 2014 - SPAG Promotions - Mentions légales
+      copyright &copy; <?php echo date('Y');?> - SPAG Promotions - Mentions légales
     </footer>   
        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
