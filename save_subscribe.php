@@ -53,16 +53,21 @@ if ($securimage->check($_POST['captcha_code']) != false) {
                 $mailchimpConfig = $config['mailchimp_config'];
                 if ($mailchimpConfig['enable']) {
                     if (isset($mailchimpConfig['api_key']) && isset($mailchimpConfig['list_id'])) {
-                        $subscriberManager = new GlobalSubscriber();
-                        $subscriberManager
+                        try{
+
+                            $subscriberManager = new GlobalSubscriber();
+                            $subscriberManager
                             ->setApiKey($mailchimpConfig['api_key'])
                             ->setListId($mailchimpConfig['list_id'])
                             ->addMatchingFields($config['mailchimp_matching'])
                             ->addDataToList($_POST)->subscribe();
-                        $errorMsg = $subscriberManager->getErrorMsg();
-                        if (empty($errorMsg)) {
-                            $state = 1;
-                        }
+                            $errorMsg = $subscriberManager->getErrorMsg();
+                            if (empty($errorMsg)) {
+                                $state = 1;
+                            }
+                        }catch(\Exception $e){
+                           $state = 0;
+                       }
                     }
                 }
             }
@@ -108,6 +113,6 @@ if ($securimage->check($_POST['captcha_code']) != false) {
     
     header('location:confirm.php');
 }else{
-    header('location:index.php');
+    header('location:index.php?&error=1');
 
 }
