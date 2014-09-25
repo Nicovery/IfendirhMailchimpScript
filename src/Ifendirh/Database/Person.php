@@ -39,8 +39,7 @@ class Person {
         }
         
         $query .= ")";
-        
-        echo $query;
+
         $this->dbObject->exec($query);
     }
 }
