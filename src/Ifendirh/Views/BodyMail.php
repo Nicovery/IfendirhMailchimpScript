@@ -6,7 +6,7 @@ namespace Ifendirh\Views;
 class BodyMail
 {
 	
-	public static function create($fields)
+	public static function create($fields, $exclude)
 	{
 		$body = '';
 		foreach ($fields as $fieldName => $fieldValue) {
