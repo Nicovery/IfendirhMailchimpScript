@@ -96,7 +96,7 @@ if ($securimage->check($_POST['captcha_code']) != false) {
                     ->setTo($mailsCopy['to'])
                     ->setSubject($mailsCopy['subject'])
                     ->setContentType('text/html')
-                    ->setBody(BodyMail::create($_POST));
+                    ->setBody(BodyMail::create($_POST,array('captcha_code')));
                 
                 $result = $mailer->send($message);
             }
