@@ -31,15 +31,21 @@ class Person {
         foreach($fields as $field){
             $query .= ", ".$field;
         }
-        
+
         $query .= ") VALUES (NULL";
         
+        
         foreach($fields as $field){
-            $query .= ", '".$data[$field]."'";
+            $query .= ", :".$field;
+        }
+
+        $query .= ")";
+        $prepareValues = array();
+        foreach($fields as $field){
+            $prepareValues[$field] = $data[$field];
         }
         
-        $query .= ")";
-
-        $this->dbObject->exec($query);
+        $preparedStatement = $this->dbObject->getDatabaseObject()->prepare($query);
+        $state = $preparedStatement->execute($prepareValues);
     }
 }
