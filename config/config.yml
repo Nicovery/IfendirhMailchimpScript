@@ -17,9 +17,9 @@ mails_copy:
 database_config:
     host: localhost
     port: 3306
-    dababase_name: facebook
+    dababase_name: databasename
     user: root
-    password: dfg11ert!
+    password: 
     #enable the saving in database part
     enable: false 
 
@@ -51,3 +51,6 @@ database_matching:
         email: email
         prenom: firstname
         nom: lastname
+
+google_analytics:
+    code: UA-xxxx-x

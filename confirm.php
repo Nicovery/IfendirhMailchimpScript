@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Confirmation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -11,7 +11,7 @@
     <body>
        <div class="container">
         <div class="row relative-box">
-           <div class="col-md-6"><img src="img/logo_spag.png" alt=""></div>
+            <div class="col-md-6"><a href="index.php"><img src="img/logo_spag.png" alt=""></a></div>
            <div class="col-md-6 corner-bottom" ><h1 >Résidence Clos Marie</h1></div>
         </div>
        </div>
@@ -73,7 +73,7 @@
       
     
     <footer>
-      copyright &copy; 2014 - SPAG Promotions - Mentions légales
+      copyright &copy; <?php echo date('Y') ?> - SPAG Promotions - Mentions légales
     </footer>   
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5416d2e149fb2c33"></script>

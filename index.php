@@ -1,3 +1,7 @@
+<?php 
+require_once "vendor/autoload.php"; 
+$googleAnalytics = new Ifendirh\Views\Helper\GoogleAnalyticsHelper();
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -107,6 +111,7 @@
   <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
   Mauvais code de sécurité.
 </div>
+            <?php endif ?>
             <div class="form-group">
               <label for="nom">Nom* :</label>
               <input type="text" title="Your name is required." class="form-control" name="nom" id="nom" required placeholder="">
@@ -161,5 +166,8 @@
         <script src="js/ekko-lightbox.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="js/main.js"></script>
+        <script>
+        <?php $googleAnalytics->display(); ?>
+        </script>
     </body>
 </html>
