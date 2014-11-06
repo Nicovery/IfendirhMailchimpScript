@@ -20,7 +20,6 @@ database_config:
     dababase_name: databasename
     user: root
     password: 
-    table: my_table
     #enable the saving in database part
     enable: false 
 
