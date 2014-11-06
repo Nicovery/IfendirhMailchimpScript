@@ -83,7 +83,9 @@ if ($securimage->check($_POST['captcha_code']) != false) {
                 $data = array();
                 
                 foreach ($databaseMatching['fields'] as $databaseField => $formField) {
-                    $data[$databaseField] = $_POST[$formField];
+                    if(isset($_POST[$formField])){
+                        $data[$databaseField] = $_POST[$formField];
+                    }
                 }
                 $person->insert($databaseMatching['table'], $data);
                 $state = 1;
