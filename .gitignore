@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-vendor/
-=======
-/vendor/
->>>>>>> 5d49d0098276c846678d016df4b65b4bf75a3fbb
+vendor
+nbproject
+
