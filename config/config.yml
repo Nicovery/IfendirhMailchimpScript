@@ -10,7 +10,7 @@ mails_copy:
         name: La Matrix
     to: 
         - nicolas.ludovic@gmail.com
-        - nludovic@tbwa-lamatrix
+        - nludovic@tbwa-lamatrix.com
     subject: Landing Page Résidence Le Koeur
     cci: ~ 
 
